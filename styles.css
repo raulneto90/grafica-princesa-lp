@@ -556,11 +556,29 @@ textarea {
   border-radius: 1rem;
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-base);
+  border: 2px solid transparent;
 }
 
 .about__feature:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
+}
+
+/* Variação de cores nas bordas ao hover */
+.about__feature:nth-child(4n+1):hover {
+  border-color: var(--primary-color);
+}
+
+.about__feature:nth-child(4n+2):hover {
+  border-color: var(--accent-color);
+}
+
+.about__feature:nth-child(4n+3):hover {
+  border-color: var(--secondary-color);
+}
+
+.about__feature:nth-child(4n+4):hover {
+  border-color: var(--primary-color);
 }
 
 .about__feature-icon {
@@ -573,6 +591,23 @@ textarea {
   background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
   color: var(--text-dark);
   border-radius: 0.75rem;
+}
+
+/* Variação de cores nos ícones dos features */
+.about__feature:nth-child(4n+1) .about__feature-icon {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+}
+
+.about__feature:nth-child(4n+2) .about__feature-icon {
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+}
+
+.about__feature:nth-child(4n+3) .about__feature-icon {
+  background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light));
+}
+
+.about__feature:nth-child(4n+4) .about__feature-icon {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
 }
 
 .about__feature-title {
@@ -865,25 +900,13 @@ textarea {
   font-size: var(--h3-font-size);
   font-weight: var(--font-bold);
   margin-bottom: 0.25rem;
+  color: #ffffff;
 }
 
 .portfolio__item-category {
   font-size: var(--small-font-size);
-  color: var(--accent-light);
+  color: #ffffff;
   font-weight: var(--font-medium);
-}
-
-/* Variação de cores nas categorias do portfólio */
-.portfolio__item:nth-child(3n+1) .portfolio__item-category {
-  color: var(--primary-light);
-}
-
-.portfolio__item:nth-child(3n+2) .portfolio__item-category {
-  color: var(--accent-light);
-}
-
-.portfolio__item:nth-child(3n+3) .portfolio__item-category {
-  color: var(--secondary-light);
 }
 
 /*=============== CTA SECTION ===============*/
