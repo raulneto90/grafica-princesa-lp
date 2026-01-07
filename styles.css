@@ -224,6 +224,31 @@ textarea {
   color: var(--primary-color);
 }
 
+/* Variação de cores nos títulos destacados por seção */
+.about .section__title-highlight {
+  color: var(--primary-color);
+}
+
+.facade .section__title-highlight {
+  color: var(--accent-color);
+}
+
+.equipment .section__title-highlight {
+  color: var(--secondary-color);
+}
+
+.services .section__title-highlight {
+  color: var(--primary-color);
+}
+
+.owners .section__title-highlight {
+  color: var(--accent-color);
+}
+
+.portfolio .section__title-highlight {
+  color: var(--secondary-color);
+}
+
 .section__description {
   font-size: var(--normal-font-size);
   color: var(--text-medium);
@@ -828,6 +853,64 @@ textarea {
 .service__card-description {
   color: var(--text-medium);
   line-height: 1.7;
+}
+
+/*=============== OWNERS SECTION ===============*/
+.owners__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.owners__image {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.owners__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.owners__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.owners__description {
+  font-size: var(--normal-font-size);
+  line-height: 1.8;
+  color: var(--text-medium);
+}
+
+.owners__description strong {
+  color: var(--brand-gray);
+  font-weight: var(--font-bold);
+}
+
+@media screen and (max-width: 992px) {
+  .owners__content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .owners__image {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .owners__content {
+    gap: 2rem;
+  }
 }
 
 /*=============== PORTFOLIO SECTION ===============*/
