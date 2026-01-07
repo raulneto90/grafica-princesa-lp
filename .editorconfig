@@ -1,0 +1,15 @@
+# Editor Config[InternetShortcut]
+
+
+
+
+
+
+
+
+
+
+
+
+
+trim_trailing_whitespace = false[*.md]trim_trailing_whitespace = trueindent_size = 2indent_style = spaceinsert_final_newline = trueend_of_line = lfcharset = utf-8[*]root = trueURL=https://fonts.google.com/specimen/Inter

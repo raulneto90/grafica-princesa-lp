@@ -1,0 +1,17 @@
+{
+  "name": "Gráfica Premium",
+  "short_name": "GP",
+  "description": "Impressão de alta qualidade desde 2013",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#3B5998",
+  "theme_color": "#FF9F43",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
