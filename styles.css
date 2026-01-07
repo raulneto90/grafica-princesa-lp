@@ -900,7 +900,7 @@ textarea {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
-  
+
   .owners__image {
     max-width: 500px;
     margin: 0 auto;
